@@ -81,7 +81,7 @@ if user_input:
         st.text(user_input)
 
     #CONFIG = {'configurable': {'thread_id': st.session_state['thread_id']}}
-
+# confis is needed to pass to langgraph chatbot to identify the thread, so that it can save and retrieve the state accordingly,evey thread will have its own state
     CONFIG = {
         "configurable": {"thread_id": st.session_state["thread_id"]},
         "metadata": {
