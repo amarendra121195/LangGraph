@@ -153,3 +153,5 @@ def chat(req: ChatRequest):
         assistant_reply = f"Sorry — chat generation failed: {e}"
 
     return {"type": "text", "response": assistant_reply}
+
+
